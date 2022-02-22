@@ -8,9 +8,7 @@ namespace PP01SnakeAndLadder
         {
             Console.WriteLine("This problem simulates a Snake and Ladder Game");
 
-            ExactWin.ExactWinningPossition();
-
-            Console.WriteLine("Player Has Won");
+            TwoPlayerGame.TwoPlayersGame();
         }
     }
 }
