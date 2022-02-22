@@ -8,8 +8,9 @@ namespace PP01SnakeAndLadder
         {
             Console.WriteLine("This problem simulates a Snake and Ladder Game");
 
-            int[] arr = StartsFromZero.RestartAtZero();
-            Console.WriteLine("Number of Dice Roll " + arr[0] + "  Position " + arr[1]);
+            ExactWin.ExactWinningPossition();
+
+            Console.WriteLine("Player Has Won");
         }
     }
 }
