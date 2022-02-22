@@ -9,7 +9,7 @@ namespace PP01SnakeAndLadder
     public class ExactWin
     {
         /// <summary>
-        /// Get the exact winning pssition.
+        /// Get the exact winning pssition and number of dice rolls to reach the position 
         /// </summary>
         public static void ExactWinningPossition()
         {
@@ -19,6 +19,7 @@ namespace PP01SnakeAndLadder
             {
                 
                 int roll = DiceRoll.DiceRollValue();
+                Console.WriteLine("Dice roll value is " +roll);
                 if (Position == 99 && roll == 1)
                 {
                     Position = StartsFromZero.RestartAtZero(roll, Position);
@@ -45,8 +46,10 @@ namespace PP01SnakeAndLadder
                     Position = StartsFromZero.RestartAtZero(roll, Position);
                 }
                 Counter++;
+                Console.WriteLine("Num of Dice Roll is {0} & Player positio is {1} " , Counter, Position);
             }
-            Console.WriteLine("Players Final Position " + Position);
+        
+            Console.WriteLine("Players Final Position " + Position + " Number of total dice roll to reach winning Position " + Counter);
         }
     }
 }
